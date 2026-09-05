@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f4f5;
+  --foreground: #111113;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(255, 255, 255, 0.95),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(210, 210, 220, 0.4),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(255, 255, 255, 0.8),
+      transparent 35%
+    ),
+    var(--background);
+
+  color: var(--foreground);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* Glass system */
+
+.glass {
+  background: rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Gradient typography */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #111113 0%,
+    #55555b 50%,
+    #9999a0 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Selection */
+
+::selection {
+  background: #111113;
+  color: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c7;
+  border-radius: 999px;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
