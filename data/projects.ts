@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description:
       "A desktop-based rental management application designed to manage properties, owners, tenants, rental agreements, and payments using object-oriented programming principles.",
     technologies: ["Java", "OOP", "Swing", "MySQL", "JDBC"],
-    image: "/images/project-house-rental.png",
+    image: "images",
     github: "https://github.com/MaleeshaSewmini/House-Rental-Management-System.git",
   },
 
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     description:
       "A modern interior design platform concept that allows users to explore designs, manage spaces, and create personalized room concepts through an interactive interface.",
     technologies: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-    image: "/images/project-smartspace.png",
+    image: "images",
     github: "https://github.com/MaleeshaSewmini/interior-web-app.git",
     demo: "#",
   },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description:
       "A data-driven project exploring student performance patterns and predicting outcomes using structured educational data.",
     technologies: ["Python", "Pandas", "NumPy", "Machine Learning"],
-    image: "/images/project-performance.png",
+    image: "images",
     github: "#",
   },
 
@@ -51,7 +51,8 @@ export const projects: Project[] = [
     description:
       "A real-time hand gesture recognition system using MediaPipe and OpenCV to detect hand landmarks and classify common gestures through webcam input.",
     technologies: ["MediaPipe", "OpenCV", "Python"],
-    image: "/images/project-gesture.png",
-    github: "https://github.com/MaleeshaSewmini/Hand-Gesture-Recognition-System.git",
+    image: "images",
+    github: 
+    "https://github.com/MaleeshaSewmini/Hand-Gesture-Recognition-System.git",
   },
 ];
