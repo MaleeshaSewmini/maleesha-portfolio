@@ -72,7 +72,6 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              href="/Maleesha%20cv1.pdf"
               href="/Maleesha-CV.pdf"
               download="Maleesha-CV.pdf"
               whileHover={{ y: -2 }}
