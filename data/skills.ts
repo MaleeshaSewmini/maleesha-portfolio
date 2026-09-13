@@ -18,6 +18,7 @@ export const skillGroups = [
       "Tailwind CSS",
       "HTML",
       "CSS",
+      "Java Script"
     ],
   },
 

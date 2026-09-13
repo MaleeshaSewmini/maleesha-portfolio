@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "A desktop-based rental management application designed to manage properties, owners, tenants, rental agreements, and payments using object-oriented programming principles.",
     technologies: ["Java", "OOP", "Swing", "MySQL", "JDBC"],
     image: "/images/project-house-rental.png",
-    github: "#",
+    github: "https://github.com/MaleeshaSewmini/House-Rental-Management-System.git",
   },
 
   {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "A modern interior design platform concept that allows users to explore designs, manage spaces, and create personalized room concepts through an interactive interface.",
     technologies: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
     image: "/images/project-smartspace.png",
-    github: "#",
+    github: "https://github.com/MaleeshaSewmini/interior-web-app.git",
     demo: "#",
   },
 
@@ -45,13 +45,13 @@ export const projects: Project[] = [
   },
 
   {
-    id: "qa-automation",
+    id: "Hand Gesture Recognition Project",
     number: "04",
-    title: "QA Automation Project",
+    title: "Hand Gesture Recognition Project",
     description:
-      "An automated testing project designed to demonstrate UI testing, test organization, assertions, and automated regression workflows.",
-    technologies: ["Selenium", "Java", "TestNG"],
-    image: "/images/project-qa.png",
-    github: "#",
+      "A real-time hand gesture recognition system using MediaPipe and OpenCV to detect hand landmarks and classify common gestures through webcam input.",
+    technologies: ["MediaPipe", "OpenCV", "Python"],
+    image: "/images/project-gesture.png",
+    github: "https://github.com/MaleeshaSewmini/Hand-Gesture-Recognition-System.git",
   },
 ];

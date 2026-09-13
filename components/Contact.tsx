@@ -34,8 +34,8 @@ export default function Contact() {
             <div className="mt-10 flex flex-wrap gap-3">
               {/* Email */}
               <a
-                href="mailto:your-email@example.com"
-                className="flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-neutral-200"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=bgcpbmv@gmail.com"
+                className="flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm transition hover:bg-white/10"
               >
                 <Mail size={16} />
                 Email me
@@ -68,6 +68,7 @@ export default function Contact() {
                 LinkedIn
               </a>
             </div>
+
           </div>
         </motion.div>
       </div>

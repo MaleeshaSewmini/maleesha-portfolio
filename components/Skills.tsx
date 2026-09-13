@@ -20,9 +20,9 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="glass rounded-[1.7rem] p-7"
+              className="glass rounded-[1.7rem] p-7 shadow-[0_20px_60px_rgba(12,18,28,0.25)]"
             >
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-xl font-semibold text-cyan-200">
                 {group.title}
               </h3>
 
@@ -30,7 +30,7 @@ export default function Skills() {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-white/80 bg-white/50 px-4 py-2 text-sm text-neutral-600 backdrop-blur-xl"
+                    className="rounded-full border border-cyan-300/15 bg-slate-950/60 px-4 py-2 text-sm font-medium text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-xl transition hover:border-cyan-300/30 hover:text-cyan-200"
                   >
                     {skill}
                   </span>
@@ -53,11 +53,11 @@ function SectionHeading({
 }) {
   return (
     <div className="max-w-2xl">
-      <p className="text-sm font-medium uppercase tracking-[0.25em] text-neutral-400">
+      <p className="text-sm font-medium uppercase tracking-[0.25em] text-cyan-300/90">
         {eyebrow}
       </p>
 
-      <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
+      <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
         {title}
       </h2>
     </div>

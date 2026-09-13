@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4f4f5;
-  --foreground: #111113;
+  --background: #07151f;
+  --foreground: #edf7ff;
+  --muted: #9db7c7;
+  --panel: rgba(15, 27, 38, 0.74);
+  --panel-strong: rgba(14, 23, 33, 0.88);
+  --line: rgba(148, 163, 184, 0.15);
+  --primary: #5eead4;
+  --primary-strong: #38bdf8;
+  --primary-deep: #0f172a;
+  --heading: #f8fbff;
+  --body: #d9ecf7;
 }
 
 * {
@@ -15,95 +24,89 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
   background:
-    radial-gradient(
-      circle at 15% 15%,
-      rgba(255, 255, 255, 0.95),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 85% 10%,
-      rgba(210, 210, 220, 0.4),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 50% 90%,
-      rgba(255, 255, 255, 0.8),
-      transparent 35%
-    ),
-    var(--background);
-
-  color: var(--foreground);
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 20%),
+    radial-gradient(circle at top right, rgba(94, 234, 212, 0.14), transparent 25%),
+    radial-gradient(circle at bottom center, rgba(15, 118, 110, 0.18), transparent 30%),
+    linear-gradient(135deg, #050d15 0%, #0b1723 30%, #101b2b 100%);
+  color: var(--body);
+  font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.01em;
+  text-rendering: optimizeLegibility;
 }
 
-/* Glass system */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+p,
+span,
+a,
+li {
+  color: inherit;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 100%);
+  opacity: 0.85;
+}
 
 .glass {
-  background: rgba(255, 255, 255, 0.48);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  background: rgba(15, 23, 32, 0.68);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(94, 234, 212, 0.18);
+  box-shadow: 0 24px 80px rgba(2, 6, 23, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-/* Gradient typography */
-
 .gradient-text {
-  background: linear-gradient(
-    90deg,
-    #111113 0%,
-    #55555b 50%,
-    #9999a0 100%
-  );
-
+  background: linear-gradient(135deg, #a7f3d0 0%, #67e8f9 30%, #a5b4fc 70%, #dbeafe 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-/* Selection */
-
 ::selection {
-  background: #111113;
-  color: white;
+  background: rgba(94, 234, 212, 0.35);
+  color: #f8fdff;
 }
 
-/* Scrollbar */
-
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgba(15, 23, 32, 0.6);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c4c4c7;
+  background: linear-gradient(180deg, rgba(94, 234, 212, 0.8), rgba(56, 189, 248, 0.8));
   border-radius: 999px;
 }
 
-/* Images */
-
 img {
   max-width: 100%;
+  display: block;
 }
-
-/* Links */
 
 a {
   text-decoration: none;
 }
-
-/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   html {

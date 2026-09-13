@@ -16,46 +16,43 @@ export default function Navbar() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-5">
-      <nav className="glass mx-auto flex max-w-5xl items-center justify-between rounded-full px-5 py-3">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between rounded-full border border-cyan-300/15 bg-slate-950/60 px-4 py-3 shadow-[0_18px_50px_rgba(14,165,233,0.12)] backdrop-blur-xl md:px-5">
         <a
           href="#"
-          className="text-lg font-semibold tracking-tight"
+          className="text-base font-semibold tracking-tight text-white md:text-lg"
         >
-          Maleesha Sewmini<span className="text-neutral-400">.</span>
+          Maleesha <span className="text-cyan-300">Sewmini</span>
         </a>
 
-        {/* Desktop */}
-        <div className="hidden items-center gap-7 md:flex">
+        <div className="hidden items-center gap-2 md:flex">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm text-neutral-600 transition hover:text-black"
+              className="rounded-full px-3 py-2 text-sm font-medium text-slate-300 transition-all duration-200 hover:bg-cyan-400/10 hover:text-cyan-200"
             >
               {item.name}
             </a>
           ))}
         </div>
 
-        {/* Mobile button */}
         <button
           onClick={() => setOpen(!open)}
-          className="rounded-full p-2 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-300/15 bg-slate-900/80 text-slate-100 shadow-lg shadow-cyan-500/10 transition hover:border-cyan-300/30 hover:text-cyan-200 md:hidden"
           aria-label="Toggle menu"
         >
-          {open ? <X size={20} /> : <Menu size={20} />}
+          {open ? <X size={18} /> : <Menu size={18} />}
         </button>
 
-        {/* Mobile menu */}
         {open && (
-          <div className="absolute left-4 right-4 top-16 rounded-3xl border border-white/60 bg-white/80 p-5 shadow-xl backdrop-blur-2xl md:hidden">
-            <div className="flex flex-col gap-4">
+          <div className="absolute left-4 right-4 top-16 rounded-[1.5rem] border border-cyan-300/15 bg-slate-950/90 p-4 shadow-[0_25px_60px_rgba(2,8,23,0.9)] backdrop-blur-2xl md:hidden">
+            <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-xl px-3 py-2 text-sm text-neutral-700 hover:bg-white"
+                  className="rounded-xl px-3 py-2.5 text-sm font-medium text-slate-200 transition hover:bg-cyan-400/10 hover:text-cyan-200"
                 >
                   {item.name}
                 </a>

@@ -5,28 +5,28 @@ import { ArrowUpRight } from "lucide-react";
 
 const experiences = [
   {
-    year: "2026",
+    year: "2025 present",
     title: "Assistant Secretary",
     organization:
-      "Association of Computing & Information Systems Students",
+      "IEEE Computer Society Student Branch chapter,Wayamba University of Sri Lanka",
     description:
       "Supporting student activities, communications, event coordination, and technology-focused initiatives.",
   },
 
   {
-    year: "2026",
-    title: "University Projects",
-    organization: "Wayamba University of Sri Lanka",
+    year: "2024 present ",
+    title: "Commitee Member",
+    organization: "Association of Computing and Information Systems Students,Wayamba University of Sri Lanka",
     description:
       "Worked on academic software and computing projects involving object-oriented programming, databases, web technologies, and data.",
   },
 
   {
-    year: "2026",
-    title: "Continuous Learning",
-    organization: "Personal Development",
+    year: "2023-2024",
+    title: "IT Intern",
+    organization: "Siddhalepa Ayurveda",
     description:
-      "Exploring modern web development, software engineering, automation testing, cloud technologies, and data-related technologies.",
+      "Actively contributed to organizing academic and technical events, supporting student activities, collaborating with committee members, and promoting professional and technical development among computing students.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Experience() {
     <section id="experience" className="px-6 py-28">
       <div className="mx-auto max-w-6xl">
         <div>
-          <p className="text-sm font-medium uppercase tracking-[0.25em] text-neutral-400">
+          <p className="text-sm font-medium uppercase tracking-[0.25em] text-neutral-800">
             Experience
           </p>
 
@@ -54,7 +54,7 @@ export default function Experience() {
               transition={{ delay: index * 0.1 }}
               className="group grid gap-5 border-t border-neutral-300 py-8 md:grid-cols-[120px_1fr_auto]"
             >
-              <span className="text-sm text-neutral-400">
+              <span className="text-sm text-neutral-800">
                 {experience.year}
               </span>
 
@@ -63,7 +63,7 @@ export default function Experience() {
                   {experience.title}
                 </h3>
 
-                <p className="mt-1 text-sm text-neutral-500">
+                <p className="mt-1 text-sm text-neutral-800">
                   {experience.organization}
                 </p>
 

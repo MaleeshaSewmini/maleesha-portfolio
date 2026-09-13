@@ -7,11 +7,12 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
+import Services from "@/components/Services";
+import Certificates from "@/components/Certificates";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Navbar />
 
       <Hero />
@@ -22,7 +23,11 @@ export default function Home() {
 
       <Projects />
 
+      <Services />
+
       <Experience />
+
+      <Certificates />
 
       <Education />
 

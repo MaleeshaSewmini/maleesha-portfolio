@@ -14,18 +14,18 @@ export default function About() {
         >
           <div className="grid gap-12 md:grid-cols-[0.7fr_1.3fr]">
             <div>
-              <p className="text-sm font-medium uppercase tracking-[0.25em] text-neutral-400">
+              <p className="text-sm font-medium uppercase tracking-[0.25em] text-cyan-300/90">
                 About
               </p>
 
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
                 Curious by nature.
                 <br />
-                Builder by choice.
+                <span className="text-cyan-200">Builder by choice.</span>
               </h2>
             </div>
 
-            <div className="space-y-5 text-base leading-8 text-neutral-600">
+            <div className="space-y-5 text-base leading-8 text-slate-300 md:text-lg">
               <p>
                 I&apos;m a Computing and Information Systems
                 undergraduate at Wayamba University of Sri Lanka,
@@ -62,9 +62,9 @@ function Stat({
   label: string;
 }) {
   return (
-    <div className="rounded-2xl border border-white/70 bg-white/40 p-4 backdrop-blur-xl">
-      <p className="text-2xl font-semibold">{number}</p>
-      <p className="mt-1 text-xs text-neutral-500">{label}</p>
+    <div className="rounded-2xl border border-cyan-300/15 bg-slate-900/60 p-4 shadow-[0_15px_35px_rgba(8,145,178,0.08)] backdrop-blur-xl">
+      <p className="text-2xl font-semibold text-cyan-300">{number}</p>
+      <p className="mt-1 text-xs uppercase tracking-[0.16em] text-slate-400">{label}</p>
     </div>
   );
 }
