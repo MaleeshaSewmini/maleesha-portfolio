@@ -73,6 +73,7 @@ export default function Hero() {
 
             <motion.a
               href="/Maleesha%20cv1.pdf"
+              href="/Maleesha-CV.pdf"
               download="Maleesha-CV.pdf"
               whileHover={{ y: -2 }}
               className="glass flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-slate-100 transition hover:border-cyan-300/25 hover:bg-slate-800/70"
